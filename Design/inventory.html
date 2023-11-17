@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory - Inventory Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/premium-vector/delivery-agent-checking-delivery-illustration-concept-white-background_701961-221.jpg" ); /* Replace with your background image URL */
+            background-size: cover;
+            color: #fff;
+        }
+        .inventory-section {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        .table th,
+        .table td {
+            color: #333;
+        }
+        .table th {
+            background-color: #f8f9fa;
+        }
+        .table-hover tbody tr:hover {
+            background-color: #dae0e5;
+        }
+        .buy-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">Inventory Management</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="inventory.html">Inventory</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Inventory Section -->
+<div class="container inventory-section">
+    <h1 class="text-center mb-4">Inventory Details</h1>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Product Name</th>
+            <th>Product ID</th>
+            <th>Quantity</th>
+            <th>Cost of Single Product</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Product 1</td>
+            <td>1001</td>
+            <td>50</td>
+            <td>$10.00</td>
+            <td><a href="purchase_details.php?product_id=1001">Buy</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Product 2</td>
+            <td>1002</td>
+            <td>30</td>
+            <td>$15.00</td>
+            <td><a href="purchase_details.php?product_id=1001">Buy</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Product 3</td>
+            <td>1003</td>
+            <td>20</td>
+            <td>$20.00</td>
+            <td><a href="purchase_details.php?product_id=1001">Buy</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Product 4</td>
+            <td>1004</td>
+            <td>40</td>
+            <td>$18.00</td>
+            <td><a href="purchase_details.php?product_id=1001">Buy</a></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Product 5</td>
+            <td>1005</td>
+            <td>25</td>
+            <td>$22.00</td>
+            <td><a href="purchase_details.php?product_id=1001">Buy</a></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Product 6</td>
+            <td>1006</td>
+            <td>60</td>
+            <td>$12.00</td>
+            <td><a href="purchase_details.php?product_id=1001">Buy</a></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Product 7</td>
+            <td>1007</td>
+            <td>35</td>
+            <td>$24.00</td>
+            <td><a href="purchase_details.php?product_id=1001">Buy</a></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Product 8</td>
+            <td>1008</td>
+            <td>45</td>
+            <td>$19.00</td>
+            <td><a href="purchase_details.php?product_id=1001">Buy</a></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Product 9</td>
+            <td>1009</td>
+            <td>55</td>
+            <td>$17.00</td>
+            <td><a href="purchase_details.php?product_id=1001">Buy</a></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Product 10</td>
+            <td>1010</td>
+            <td>28</td>
+            <td>$30.00</td>
+            <td><a href="purchase_details.php?product_id=1001">Buy</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
